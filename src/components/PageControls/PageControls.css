@@ -1,0 +1,49 @@
+.page__controls{
+    width: 230px;
+}
+
+.page__info{    
+    font-size: 14px;
+    text-align: center;
+    border: 1px solid crimson;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.page__controls button{
+    all: unset;        
+    width: 40px;
+    height: 40px;       
+    border-radius: 40px;    
+    position: relative; 
+    background: crimson;
+    color: white;    
+    cursor: pointer;
+    transition: all 0.2 ease; 
+}
+
+
+.page__controls button:hover{
+    background: red;    
+}
+
+.page__controls button:active{    
+    transform: translateY(3px);
+}
+
+.page__controls span{    
+    font-size: 30px;
+    font-weight: 900;
+    position: absolute;
+    top: -10%;
+    left: 35%;      
+}
+
+.page__btns-box{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+
+
+

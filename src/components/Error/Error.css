@@ -1,0 +1,35 @@
+.error__box{
+    width: 250px;        
+    color: white;
+    border: 1px solid crimson;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.error__box-top{
+  display: flex;
+  justify-content: space-around;
+  background-color: crimson;
+}
+
+.error__box-bottom{
+  text-align: center;
+  color: crimson;
+  font-size: 14px;
+}
+  
+.error__btn {
+    all: unset;
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 12px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.error__btn:hover {
+    color: black;
+}

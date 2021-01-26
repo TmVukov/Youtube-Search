@@ -1,0 +1,47 @@
+.video__container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+    height: auto;
+    padding-top: 40px;
+    border-top: 2px solid crimson;
+}
+
+.video{
+    width: 21%;
+    margin: 10px;   
+}
+
+.video img{
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid crimson;   
+  
+}
+.video h5{
+    height: auto;
+}
+
+.video a{
+    text-decoration: none;
+    color: black
+}
+
+.video a:hover{
+    color: gray;
+}
+
+/* Media Queries */
+
+@media (max-width: 1000px){
+    .video{
+        width: 30%;
+    }
+}
+
+@media (max-width: 800px){
+    .video{
+        width: 40%;
+    }   
+}
