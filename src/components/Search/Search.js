@@ -12,11 +12,11 @@ export default function Search() {
         setStartDate, setEndDate, 
         type, setType, 
         option, setOption, 
-        setTopic 
+        setTopic
     } = useContext(StateContext) 
     
     
-
+    
     return (        
         <section className="search">
 
@@ -94,8 +94,7 @@ export default function Search() {
                          <option value="/m/07c1v">Technology</option>
                          <option value="/m/07bxq">Tourism</option>
                          <option value="/m/07yv9">Vehicles</option>
-                         <option value="/m/09s1f">Business</option>
-                         <option value="/m/09s1f">Business</option>
+                         <option value="/m/09s1f">Business</option>                         
                          <option value="/m/0kt51">Health</option>
                          <option value="/m/01h6rj">Military</option>
                          <option value="/m/05qt0">Politics</option>

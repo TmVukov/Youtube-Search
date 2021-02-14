@@ -18,8 +18,7 @@ export default function StateProvider({children}) {
     const [currentPage, setCurrentPage] = useState(0)
     const [loading, setLoading] = useState(false)
     const [error, setError] = useState(false)
-
-    const [btnValue, setBtnValue] = useState("")
+    //const [btnValue, setBtnValue] = useState("")
 
     return (
         <StateContext.Provider value={{
@@ -37,9 +36,8 @@ export default function StateProvider({children}) {
                totalResults, setTotalResults, 
                currentPage, setCurrentPage, 
                loading, setLoading,
-               error, setError,
-               
-               btnValue, setBtnValue
+               error, setError,               
+               //btnValue, setBtnValue
             }}>
             {children}
         </StateContext.Provider>
