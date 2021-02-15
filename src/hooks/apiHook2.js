@@ -1,6 +1,7 @@
 import { useContext } from "react"
 import { gapi } from 'gapi-script';
 import { StateContext } from "../StateProvider"
+import moment from "moment"
 
 export default function ApiHook2(){     
 
@@ -39,8 +40,8 @@ export default function ApiHook2(){
               "q": `${query}`,
               "topicId" : `${topic}`,
               "pageToken": `${prevPageToken}`,
-              "publishedAfter": startDate ? `${new Date(startDate + 'UTC').toISOString()}` : null,
-              "publishedBefore": endDate ? `${new Date(endDate + 'UTC').toISOString()}`: null,    
+              "publishedAfter": startDate ? `${moment(startDate).toISOString()}` : null,
+              "publishedBefore": endDate ? `${moment(endDate).toISOString()}`: null,    
                          
         })
         .then(response => {  
